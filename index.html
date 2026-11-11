@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#244e41">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-title" content="おうちクエスト">
+  <meta name="description" content="家族3人で片付けを小さなクエストに。無料・端末内保存の家事アプリ。">
+  <title>おうちクエスト mini</title>
+  <link rel="icon" href="./icon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="./icon-192.png">
+  <link rel="manifest" href="./manifest.webmanifest">
+  <link rel="stylesheet" href="./styles.css">
+  <script type="module" src="./app.js"></script>
+</head>
+<body>
+<svg class="symbols" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><defs>
+  <symbol id="i-home" viewBox="0 0 24 24"><path d="m3 10 9-7 9 7M5 9v12h14V9M9 21v-7h6v7"/></symbol>
+  <symbol id="i-star" viewBox="0 0 24 24"><path d="m12 3 2.8 5.8 6.4.9-4.6 4.5 1.1 6.3L12 17.5l-5.7 3 1.1-6.3-4.6-4.5 6.4-.9Z"/></symbol>
+  <symbol id="i-gift" viewBox="0 0 24 24"><path d="M3 9h18v5H3zM5 14v7h14v-7M12 9v12M12 9C3 9 6 0 10 5l2 4Zm0 0c9 0 6-9 2-4l-2 4Z"/></symbol>
+  <symbol id="i-history" viewBox="0 0 24 24"><path d="M3 11a9 9 0 1 1 2 7M3 5v6h6M12 7v6l4 2"/></symbol>
+  <symbol id="i-settings" viewBox="0 0 24 24"><path d="M4 7h16M4 17h16M8 4v6m8 4v6"/></symbol>
+  <symbol id="i-check" viewBox="0 0 24 24"><path d="m5 12 4 4L19 6"/></symbol>
+  <symbol id="i-sofa" viewBox="0 0 24 24"><path d="M5 11V7a3 3 0 0 1 3-3h8a3 3 0 0 1 3 3v4M5 16h14M4 20v-3m16 3v-3M5 11a2 2 0 0 0-4 0v6h22v-6a2 2 0 0 0-4 0v3H5Z"/></symbol>
+  <symbol id="i-cup" viewBox="0 0 24 24"><path d="M4 8h12v7a5 5 0 0 1-5 5H9a5 5 0 0 1-5-5ZM16 9h2a3 3 0 0 1 0 6h-2M7 2v2m5-2v2M2 23h18"/></symbol>
+  <symbol id="i-door" viewBox="0 0 24 24"><path d="M5 21V3h14v18M2 21h20M14 12h1M8 3v18"/></symbol>
+</defs></svg>
+<header class="header"><a class="brand" href="#today"><span class="brand-icon"><svg><use href="#i-home"/></svg></span><span>おうちクエスト <small>mini</small></span></a><span class="local-badge"><i></i> 端末内に保存</span></header>
+<div class="shell">
+<nav class="nav" aria-label="メインメニュー">
+  <a href="#today"><svg><use href="#i-home"/></svg><span>今日のクエスト</span></a>
+  <a href="#rewards"><svg><use href="#i-gift"/></svg><span>ごほうび</span></a>
+  <a href="#history"><svg><use href="#i-history"/></svg><span>記録</span></a>
+  <a href="#settings"><svg><use href="#i-settings"/></svg><span>設定</span></a>
+</nav>
+<main id="main" tabindex="-1"><p class="loading">おうちの記録を開いています…</p></main>
+<footer>小さな「できた」を、家族で。<span>完全無料 · 登録不要</span></footer>
+</div>
+<div id="notice" role="status" aria-live="polite"></div>
+<dialog id="confirm-dialog"><form method="dialog"><p class="eyebrow">確認しましょう</p><h2 id="confirm-title"></h2><p id="confirm-description"></p><div class="dialog-actions"><button value="cancel" class="secondary">やめる</button><button value="ok" class="primary">記録する</button></div></form></dialog>
+<noscript>このアプリにはJavaScriptが必要です。Safariの設定で有効にしてください。</noscript>
+</body></html>
